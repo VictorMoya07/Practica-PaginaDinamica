@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto con Javascript</title>
+
+	<!--- Estilos Css-->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link id ="theme" rel="stylesheet" href="css/red.css">
+	
+
+	<!-----jQUERY---->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!------JQUERY UI---->
+
+	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+	<!--------Jquery plugin validacion----------->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	
+
+  
+	
+  	<!--- Mis scripts--->
+  	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<div id="selector-theme">
+		<div id="togreen"></div>
+		<div id="tored"></div>
+		<div id="toblue"></div>
+	</div>
+	<section id="global">
+		<header>
+
+			<!--------PARTE SUPERIOS----->
+			<div id=logo>
+				<h1>Proyecto JS</h1>
+			</div>
+			<div class="clearfix">
+				
+			</div>
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="about.html">Sobre mi</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>
+					<li>
+						<a href="reloj.html">Reloj</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		
+
+		<!-----Contenido---->
+
+		<section id="content">
+			
+			<div id="box">
+				<!--Cargar formulario de contacto -->
+				<h2>Contacto</h2>
+
+				<form action="POST" id="form_contact">
+					<label for="name">Nombre</label>
+					<input type="text" name="name" data-validation= "alphanumeric">
+					
+					<label for="apellido">Apellidos</label>
+					<input type="text" name="apellido" data-validation= "alphanumeric">
+
+					<label>Email</label>
+					<input type="email" name="email" data-validation="email">
+
+					<label for="sex">Sexo</label>
+					<select name="sex" data-validation="required">
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+					</select>
+
+					<label for="date">Fecha de Nacimiento</label>
+					<input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+
+					<label for="edad">Edad</label>
+					<input type="number" name="edad" data-validation="number">
+
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
+				
+			<aside id="sidebar">
+				<div id=about>	
+
+				<h4><span>Quien SOY?</span></h4>
+				<img src="img/caracol.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere tempore, accusantium repudiandae iure, possimus cumque, earum illo, impedit pariatur assumenda vel libero. Aliquam dolorum quidem minima, voluptatum voluptates tempore quaerat!lorem</p>
+				</div>
+				
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form action="#">
+						<label for="name">Nombre</label>
+						<input type="text" name="name" id="input_name">
+
+						<label for="Email">Email</label>
+						<input type="email" name="email" id="input_email">
+
+						<label for="password">Contraseña</label>
+						<input type="password" name="password" id="input_password">
+
+						<input type="submit" value="Entrar">
+					</form>
+
+
+				</div>
+
+			</aside>
+
+
+
+			<div class="clearfix"></div>
+		</section>
+	</section>
+
+	<footer>
+		Pagina de practica de Victor Moya.
+		
+		<a href="#" class="subir">Ir Arriba</a>
+	</footer>
+</body>
+</html>

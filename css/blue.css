@@ -1,0 +1,33 @@
+body {
+	background:url('../img/cielo.jpg');
+	background-attachment: fixed;
+}
+
+
+#logo{
+	
+	background: #1f87c4;
+}
+
+#menu ul li:hover{
+	background: #1f87c4;
+}
+
+.button-more{
+	
+	background: #1f87c4;
+}
+
+#cerrarSesion{
+	
+	background: #1f87c4;
+}
+
+#acordeon h3{
+	background: #1f87c4;
+	color:white;
+}
+
+form input[type="submit"]{
+	background: #1f87c4;
+}

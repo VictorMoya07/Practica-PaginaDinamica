@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto con Javascript</title>
+
+	<!--- Estilos Css-->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link id ="theme" rel="stylesheet" href="css/green.css">
+	
+
+	<!-----jQUERY---->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!---MOMENTS JS plugin para utilizar el metodo de mostrar fecha--->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/es.js"></script>
+
+	<!--- Mis scripts--->
+  	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<div id="selector-theme">
+		<div id="togreen"></div>
+		<div id="tored"></div>
+		<div id="toblue"></div>
+	</div>
+	<section id="global">
+		<header>
+
+			<!--------PARTE SUPERIOS----->
+			<div id=logo>
+				<h1>Proyecto JS</h1>
+			</div>
+			<div class="clearfix">
+				
+			</div>
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="about.html">Sobre mi</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>
+					<li>
+						<a href="reloj.html">Reloj</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		
+
+		<!-----Contenido---->
+
+		<section id="content">
+			
+			<div id="box">
+
+				<!--Cargar un reloj -->
+				<div id="reloj">
+					
+				</div>
+			</div>
+				
+			<aside id="sidebar">
+				<div id=about>	
+
+				<h4><span>Quien SOY?</span></h4>
+				<img src="img/caracol.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere tempore, accusantium repudiandae iure, possimus cumque, earum illo, impedit pariatur assumenda vel libero. Aliquam dolorum quidem minima, voluptatum voluptates tempore quaerat!lorem</p>
+				</div>
+				
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form action="#">
+						<label for="name">Nombre</label>
+						<input type="text" name="name" id="input_name">
+
+						<label for="Email">Email</label>
+						<input type="email" name="email" id="input_email">
+
+						<label for="password">Contraseña</label>
+						<input type="password" name="password" id="input_password">
+
+						<input type="submit" value="Entrar">
+					</form>
+
+
+				</div>
+
+			</aside>
+
+
+
+			<div class="clearfix"></div>
+		</section>
+	</section>
+
+	<footer>
+		Pagina de practica de Victor Moya.
+		
+		<a href="#" class="subir">Ir Arriba</a>
+	</footer>
+</body>
+</html>
